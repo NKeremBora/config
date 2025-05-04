@@ -1,0 +1,12 @@
+server:
+  port: 8072
+  forward-headers-strategy: framework
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: "http://localhost:8070/eureka/"
